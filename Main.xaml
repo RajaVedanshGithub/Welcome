@@ -68,20 +68,17 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="496,694" sap2010:WorkflowViewState.IdRef="Sequence_29">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="first">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="7" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="last">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="8" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="7" Name="first" />
+      <Variable x:TypeArguments="x:Int32" Default="8" Name="last" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -112,7 +109,7 @@
         <InArgument x:TypeArguments="x:Int32">[in_first+in_last]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[&quot;Sum is here:  &quot;+ sum.ToString]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[&quot;Total Sum is here:  &quot;+ sum.ToString]" />
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Sum is here:  &quot;+ sum.ToString]" />
   </Sequence>
 </Activity>
