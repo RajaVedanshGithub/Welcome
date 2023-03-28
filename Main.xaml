@@ -92,7 +92,7 @@
         <InArgument x:TypeArguments="x:Int32">[in_first]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_29">
+    <Assign DisplayName="v Assign" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_29">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[last]</OutArgument>
       </Assign.To>
